@@ -13,9 +13,9 @@ COUNTLENGTH DW 0		;用作循环计数器
 SIGN DB 0				;是否输完标志，1-已输完，0-未输完
 SIGN1 DB 0				;标示，若所查找字符在ARR内，则SIGN1——>1，否则为0
 THREE DW 0
-N EQU 30
+N EQU 30				;最多只能输入10个学生的信息
 SELECT0 DB 0AH,0DH,'---Functions---$'
-SELECT1 DB 0AH,0DH,'1,Input the information$'
+SELECT1 DB 0AH,0DH,'1,Input the number,score,rank$'
 SELECT2 DB 0AH,0DH,'2,Search in the class$'
 SELECT3 DB 0AH,0DH,'$'
 SENTENCE1 DB 0AH,0DH,'Please input the number you wannna search:$'
